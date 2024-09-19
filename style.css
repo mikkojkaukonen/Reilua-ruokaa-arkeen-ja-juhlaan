@@ -1,0 +1,214 @@
+/* XXXXXXXXXXXXXXXX YLEISET XXXXXXXXXXXXXXXX*/
+
+#header {
+    background-color: black;
+    
+}
+
+#title {
+    display: flex;
+    background-image: url(./images/title.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-style: italic;
+    color: wheat;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+#features {
+    background-image: url(./images/features-backround.png);
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 10vh;
+    justify-content: center; 
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer-container {
+    background-image: url(./images/footerbackround.jpg);
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 20fr 1fr 1fr;
+    align-items: center;   
+    gap: 0px;
+    font-size: 1rem;
+    border-top: 1px solid black;
+ }
+
+ .footer-container ul {
+    list-style: none;
+ } 
+
+ .footer-container ul li a {
+    text-decoration: none;
+    color: black;
+ }
+
+ .footerimage {
+    height: 5vh; 
+ }
+
+/* XXXXXXXXXXXXXXXX ETUSIVU XXXXXXXXXXXXXXXX*/
+
+.homeimages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto; 
+    justify-content: center;
+}
+
+.homeimage {
+    padding: 5%;
+    width: 90%;
+}
+
+
+/* XXXXXXXXXXXXXXXX RESEPTIT XXXXXXXXXXXXXXXX*/
+
+
+
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    gap: 1px;   
+}
+
+.link-item {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.link-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.link-text {
+    margin-top: 10px;
+    color: black;
+    font-size: 1rem;
+}
+
+
+/* XXXXXXXXXXXXXXXX MAKARONILAATIKKO XXXXXXXXXXXXXXXX*/
+
+#ainekset {
+   text-align: left;
+   padding-left: 10vh;
+}
+
+ul ul {
+    list-style: circle;
+}
+
+#ohjeet {
+    text-align: left;
+    padding-left: 10vh;
+ }
+
+ .ainekuvat {
+    height: 30vh;
+    margin: 5vh;
+ }
+
+ .ohjekuvat {
+    height: 30vh;
+    margin: 5vh;
+ }
+
+
+
+
+@media (max-width: 600px) {
+
+    /* XXXXXXXXXXXXXXXX YLEISET XXXXXXXXXXXXXXXX*/
+    #title {
+        font-size: 3rem;
+        height: 60vh;
+    }
+
+    #features {
+        font-size: 1.4rem;
+    }
+
+    /* XXXXXXXXXXXXXXXX RESEPTIT XXXXXXXXXXXXXXXX*/
+
+    .link-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* XXXXXXXXXXXXXXXX MAKARONILAATIKKO XXXXXXXXXXXXXXXX*/
+
+    .ainekuvat {
+        height: 20vh;
+        margin: 4vh;
+     }
+    
+     .ohjekuvat {
+        height: 20vh;
+        margin: 4vh;
+     }
+
+
+}
+
+@media (max-width: 450px) {
+
+    /* XXXXXXXXXXXXXXXX YLEISET XXXXXXXXXXXXXXXX*/
+
+    #title {
+        font-size: 1.3rem;
+        height: 30vh;
+    }
+
+    #features {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        font-size: 0.6rem;
+     }
+
+     .footerimage {
+        height: 3vh; 
+     }
+
+    /* XXXXXXXXXXXXXXXX RESEPTITI XXXXXXXXXXXXXXXX*/
+
+    .link-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* XXXXXXXXXXXXXXXX MAKARONILAATIKKO XXXXXXXXXXXXXXXX*/
+
+    .ainekuvat {
+        height: 15vh;
+        margin: 3vh;
+     }
+    
+     .ohjekuvat {
+        height: 15vh;
+        margin: 3vh;
+     }
+}
